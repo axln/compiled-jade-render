@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/axln/compiled-jade-render",
   "dependencies": {
-    "jade-runtime": "^1.1.0"
+    "jade": "^1.11.0"
   }
 }

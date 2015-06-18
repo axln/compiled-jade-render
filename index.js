@@ -1,5 +1,5 @@
 var fs = require('fs');
-var jadeRuntime = require('jade-runtime');
+var jadeRuntime = require('jade').runtime;
 
 function renderCompiledJade(filePath, locals, callback) {
   fs.readFile(filePath, function (err, content) {
