@@ -1,7 +1,7 @@
 var fs = require('fs');
 var jadeRuntime = require('jade-runtime');
 
-module.exports = function (filePath, locals, callback) {
+function renderCompiledJade(filePath, locals, callback) {
   fs.readFile(filePath, function (err, content) {
     if (err) {
       return callback(new Error(err));
@@ -11,4 +11,6 @@ module.exports = function (filePath, locals, callback) {
     var rendered = templateFunction(locals);
     return callback(null, rendered);
   })
-};
+}
+
+module.exports = renderCompiledJade;
