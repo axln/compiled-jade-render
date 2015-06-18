@@ -1,6 +1,6 @@
 {
   "name": "compiled-jade-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jade wrapper for Express.js which allows to render precompiled templates",
   "main": "index.js",
   "scripts": {
