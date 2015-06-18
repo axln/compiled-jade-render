@@ -30,7 +30,7 @@ jade --client --no-debug template.jade
 
 Probably it's not a good idea to do it manually, so I use Jade file watcher for WebStorm with a slightly modified command (`--client` and `--no-debug` added), bacause by default Jade watcher compile .jade into .html.
 
-Jade will generate a template.js file with a function which requires a single param (locals) and depends on [Jade runtime](https://github.com/jadejs/jade-runtime):
+Jade will generate a `template.js` file with a function which requires a single param (locals) and depends on [Jade runtime](https://github.com/jadejs/jade-runtime):
 
 ```javascript
 function template(locals) {
