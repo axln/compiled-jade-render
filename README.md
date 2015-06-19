@@ -30,7 +30,7 @@ or in production case:
 jade --client --no-debug template.jade
 ```
 
-Probably it's not a good idea to do it manually, so I use Jade file watcher for WebStorm with a slightly modified command (`--client` and `--no-debug` added), bacause by default Jade watcher compile .jade into .html.
+Probably it's not a good idea to do it manually, so I use Jade file watcher in WebStorm with a slightly modified command (`--client` and `--no-debug` added), bacause by default Jade watcher compile .jade into .html.
 
 Jade will generate a `template.js` file with a function which requires a single param (locals) and depends on [Jade runtime](https://github.com/jadejs/jade):
 
@@ -57,7 +57,6 @@ app.engine('js', require('compiled-jade-render'));
 ## Benchmarks
 
 In my case this wrapper allowed to reduce initial (right after lauch of the application) page generation time from approx. 450 ms to 10 ms. Subsequent requests were processed during 1-2 ms due the Node cache and opitimizations.
-
 
 ## License
 
