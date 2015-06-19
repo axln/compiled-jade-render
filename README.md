@@ -54,7 +54,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'js');
 app.engine('js', require('compiled-jade-render'));
 ```
-## Benchmarks
+## Benchmark
 
 In my case this wrapper allowed to reduce initial (right after lauch of the application) page generation time for a simple template from approx. 450 ms to 10 ms. Subsequent requests were processed during 1-2 ms due the Node cache and opitimizations.
 
