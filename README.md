@@ -45,7 +45,7 @@ function template(locals) {
 
 Such js. files can be used in Express as templates for generating HTML.
 
-## Express Setup
+## Express Configuration
 
 Just use the wrapper as an alternative template engine:
 
