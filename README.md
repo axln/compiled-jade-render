@@ -32,7 +32,7 @@ jade --client --no-debug template.jade
 
 > Note: Probably it's not a good idea to do it manually, so I use Jade file watcher in WebStorm with a slightly modified command (`--client` and `--no-debug` added), bacause by default Jade watcher compile .jade into .html. 
 
-> For production use it's recommended to use some build system (i.e. [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/)) to compile all .jade tamplates into .js files.
+> For production it's recommended to use some build system (i.e. [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/)) to compile all .jade tamplates into .js files.
 
 Jade will generate a `template.js` file with a function which requires a single param (locals) and depends on [Jade runtime](https://github.com/jadejs/jade):
 
